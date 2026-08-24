@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     gap: 13px;
+    list-style: none;
 }
 
 .header.menu .header__address {
@@ -38,9 +39,10 @@
 
 
 .header__address {
-    text-align: right;
-    margin: 0;
     line-height: 1;
+    text-decoration: none;
+    flex-direction: column;
+    display: flex;
 }
 
 .cover {
@@ -103,10 +105,10 @@
     text-decoration: none;
     font: inherit;
     color: rgba(255, 255, 255, 1);
-    position: relative;
     display: inline-block;
     margin-bottom: 61px;
     font-family: Raleway, sans-serif;
+    position: relative;
     font-weight: regular;
 }
 
@@ -115,7 +117,6 @@
 }
 
 .overlay {
-    position: absolute;
     inset: 0;
     background-color: rgb(0, 0, 0, 0.5);
 }
@@ -285,6 +286,10 @@
     font-size: 18px;
     line-height: 24.3px;
     letter-spacing: 0%;
+        line-height: 1;
+    text-decoration: none;
+    flex-direction: column;
+    display: flex;
 }
 
 .footer__menu 
