@@ -1,13 +1,24 @@
 .header {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 96px 50px;
-    justify-content: space-between;
+    padding: 93.16px 50px 96px 50px;
+    justify-content: center;
+    gap: 36.52px;
 }
 
 .header__menu {
     display: flex;
+    font-family: Raleway, sans-serif;
+    font-weight: regular;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    justify-self: start;
+}
+
+.header__link_active {
+    text-decoration: none;
 }
 
 .header__links-list-item {
@@ -21,8 +32,8 @@
     list-style: none;
 }
 
-.header.menu .header__address {
-    flex: 1;
+.header__links-list span {
+    font-size: 12px;
 }
 .header__logo {
     width: 129.11px;
@@ -42,11 +53,15 @@
     text-decoration: none;
     flex-direction: column;
     display: flex;
+    font-family: Raleway, sans-serif;
+    font-weight: regular;
+    font-size: 18px;
+    line-height: 24.3px;
+    letter-spacing: 0%;
+    justify-content: flex-end;
+    margin-left: 40%;
 }
 
-.header__address a {
-    text-decoration: none
-}
 
 .cover {
     position: relative;
@@ -72,15 +87,22 @@
     text-transform: uppercase;
     letter-spacing: 30%;
     color: rgb(255, 255, 255);
-    padding: 165px 50px 106px 50px;
+    padding: 168px 50px 106px 50px;
     gap: 20px;
     display: grid;
     font-family: Raleway, sans-serif;
     font-weight: bold;
 }
 
+.cover__heading {
+    position: relative;
+    top: 7px;
+}
+
 .cover__title-line {
     display: block;
+    letter-spacing: 30%;
+    
 }
 
 .cover__tagline {
@@ -90,8 +112,8 @@
     line-height: 28px;
     position: relative;
     background: transparent;
-    word-spacing: 20px;
-    padding: 118px 107px 61px 50px;
+    word-spacing: 18px;
+    margin-left: 50px;
     font-family: Raleway, sans-serif;
     font-weight: regular;
 }
@@ -99,19 +121,20 @@
 .cover__button {
     align-self: center;
     border: 1px solid #fff;
-    padding: 12px 32px 11px 31px;
+    padding: 11px 32px 14px 31px;
     background: transparent;
     color: #fff;
-    font-size: 22px;
+    font-size: 21px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     text-decoration: none;
-    font: inherit;
     display: inline-block;
     margin-bottom: 61px;
     font-family: Raleway, sans-serif;
     position: relative;
     font-weight: regular;
+    margin-left: 100px;
+
 }
 
 .lots {
@@ -291,10 +314,6 @@
     line-height: 1;
     flex-direction: column;
     display: flex;
-}
-
-.footer__address a {
-    text-decoration: none
 }
 
 .footer__menu
