@@ -4,30 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="styles/style.css">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
     
+    <main>
     <header class="header">
         <nav class="header__menu">
           <ul class="header__links-list">
-              <li class="header__links-list-item"><a href="#" class="header__link_active">главная</a></li>
+              <li class="header__links-list-item">Главная</li>
             <li>
                <span>o</span>
             </li>
-              <li class="header__links-list-item"><a href="#" class="header__link">посмотреть лоты</a></li>
+              <li class="header__links-list-item"><a href="#" class="header__link">Лот</a></li>
             <li>
                <span>o</span>
             </li>
-              <li class="header__links-list-item"><a href="#" class="header__link">об аукционе</a></li>
+              <li class="header__links-list-item"><a href="#" class="header__link">Об аукционе</a></li>
           </ul>
         </nav>
     
         <a href="#" class="header__logo">
-            <img src="images/logo-black.svg" class="header__logo-image" alt="logo">
+            <img src="images/logo-black.svg" class="header__logo-image" alt="ono_tebe_nado">
         </a>
         <address class="header__address">
             <a href="tel:+99995555555">+9 999 555 5555</a>
@@ -37,62 +38,60 @@
         </address>
     </header>
 
-<section class="cover">
+    <section class="cover">
         <div class="overlay"></div>
             <div class="cover__heading">
-                <h1 class="cover__title">
-                <span class="cover__title-line" style="margin-left: -5px;">ОНО</span>
-                <span class="cover__title-line" style="margin-left: 329px" >ТЕБЕ</span>
-                <span class="cover__title-line"  style="margin-left: 614px">НАДО</span>
-                </h1>
-                <span class="cover__tagline">Аукцион вещей, в которые никто не верил</span>
+                <h2 class="cover__title">
+                <span class="cover__title-line" style="text-align: left">ОНО</span>
+                <span class="cover__title-line" style="text-align: center" style="margin-right: -15px;">ТЕБЕ</span>
+                <span class="cover__title-line" style="text-align: right" style="margin-right: -30px;">НАДО</span>
+                </h2>
+                <span class="cover__tagline">Аукцион вещей, в которых никто не верил</span>
                 <a href="#catalog" class="cover__button">Сделать ставку</a>
             </div>
-        </div>
+    </section>
+
+    <section class="lots">
+        <h2 class="lots__heading">лоты</h2>
+            <ul class="lots__card-list">
+                <li class="lots__card-list-item">
+                    <a href="#" class="card-link">
+                        <article class="card card_type_film">
+                            <div class="overlay"></div>
+                            <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                            <div class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</div>
+                        </article>
+                    </a>
+                </li>
+
+
+                <li class="lost__card-list">
+                    <a href="#" class="card-link">
+                        <article class="card card_type_book">
+                            <div class="overlay"></div>
+                            <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                            <div class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</div>
+                        </article>
+                    </a>
+                </li>
+
+                <li class="lost__card-list">
+                    <a href="#" class="card-link">
+                        <article class="card card_type_picture">
+                            <div class="overlay"></div>
+                            <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                            <div class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</div>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+                <a href="#" class="lots__look-more-link">посмотреть больше</a>
 </section>
-    <main>
-        <section class="lots">
-            <h1 class="lots__heading">лоты</h1>
-                <ul class="lots__card-list">
-                    <li class="lots__card-list-item">
-                        <a href="#" class="card-link">
-                            <article class="card card_type_film">
-                                <div class="overlay"></div>
-                                <h1 class="card__title">Фильм режиссёра, который бросил киношколу</h1>
-                                <div class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</div>
-                            </article>
-                        </a>
-                    </li>
-
-
-                    <li class="lost__card-list">
-                        <a href="#" class="card-link">
-                            <article class="card card_type_book">
-                                <div class="overlay"></div>
-                                <h1 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h1>
-                                <div class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</div>
-                            </article>
-                        </a>
-                    </li>
-
-                    <li class="lost__card-list">
-                        <a href="#" class="card-link">
-                            <article class="card card_type_picture">
-                                <div class="overlay"></div>
-                                <h1 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h1>
-                                <div class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</div>
-                            </article>
-                        </a>
-                    </li>
-                                <li><a href="#" class="lots__look-more-link">посмотреть больше</a></li>
-                </ul>
-        </section>
-    </main>
 
     <section class="about">
         <div class="about__column">
             <div class="about__logo">
-                <img src="/images/logo-white.svg" alt="logo-white" class="about__logo-image">
+                <img src="./images/logo-white.svg" alt="лого" class="about__logo-image">
             </div>
         </div>
 
@@ -124,22 +123,22 @@
         <ul class="footer__social-list">
             <li class="footer__social-list-item">
                 <a href="#" class="footer__social-link">
-                    <img src="/images/yt.svg" alt="yt" class="footer__social-icon">
+                    <img src="./images/yt.svg" alt="ют" class="footer__social-icon">
                 </a>
             </li>
 
             <li class="footer__social-list-item">
                 <a href="#" class="footer__social-link">
-                    <img src="/images/vk.svg" alt="vk" class="footer__social-icon">
+                    <img src="./images/vk.svg" alt="вк" class="footer__social-icon">
                 </a>
             </li> 
             <li class="footer__social-list-item">
                 <a href="#" class="footer__social-link">
-                    <img src="/images/pinterest.svg" alt="pinterest" class="footer__social-icon">
+                    <img src="./images/pinterest.svg" alt="пинтерест" class="footer__social-icon">
                 </a>
             </li>
         </ul>
     </footer>
   </body>
 </html>
-
+</main>

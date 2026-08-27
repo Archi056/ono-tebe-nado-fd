@@ -1,24 +1,13 @@
 .header {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 93.16px 50px 96px 50px;
-    justify-content: center;
-    gap: 36.52px;
+    padding: 92px 50px 96px 50px;
+    justify-content: space-between;
 }
 
 .header__menu {
     display: flex;
-    font-family: Raleway, sans-serif;
-    font-weight: regular;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    justify-self: start;
-}
-
-.header__link_active {
-    text-decoration: none;
 }
 
 .header__links-list-item {
@@ -32,8 +21,8 @@
     list-style: none;
 }
 
-.header__links-list span {
-    font-size: 12px;
+.header.menu .header__address {
+    flex: 1;
 }
 .header__logo {
     width: 129.11px;
@@ -53,13 +42,7 @@
     text-decoration: none;
     flex-direction: column;
     display: flex;
-    font-family: Raleway, sans-serif;
-    font-weight: regular;
-    font-size: 18px;
-    line-height: 24.3px;
-    letter-spacing: 0%;
-    justify-content: flex-end;
-    margin-left: 40%;
+    font-style: normal;
 }
 
 
@@ -87,22 +70,15 @@
     text-transform: uppercase;
     letter-spacing: 30%;
     color: rgb(255, 255, 255);
-    padding: 168px 50px 106px 50px;
+    padding: 165px 50px 106px 50px;
     gap: 20px;
     display: grid;
     font-family: Raleway, sans-serif;
     font-weight: bold;
 }
 
-.cover__heading {
-    position: relative;
-    top: 7px;
-}
-
 .cover__title-line {
     display: block;
-    letter-spacing: 30%;
-    
 }
 
 .cover__tagline {
@@ -112,8 +88,8 @@
     line-height: 28px;
     position: relative;
     background: transparent;
-    word-spacing: 18px;
-    margin-left: 50px;
+    word-spacing: 20px;
+    padding: 118px 107px 61px 50px;
     font-family: Raleway, sans-serif;
     font-weight: regular;
 }
@@ -121,24 +97,24 @@
 .cover__button {
     align-self: center;
     border: 1px solid #fff;
-    padding: 11px 32px 14px 31px;
+    padding: 12px 32px 11px 31px;
     background: transparent;
     color: #fff;
-    font-size: 21px;
+    font-size: 22px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     text-decoration: none;
+    font: inherit;
     display: inline-block;
     margin-bottom: 61px;
     font-family: Raleway, sans-serif;
     position: relative;
     font-weight: regular;
-    margin-left: 100px;
-
 }
 
 .lots {
     padding: 180px 24px 120px 24px;
+    list-style-type: none; 
 }
 
 .overlay {
@@ -159,6 +135,8 @@
     font-size: 40px;
     line-height: 100%;
     text-transform: uppercase;
+    padding-bottom: 27px;
+    padding-left: 40px;
 }
 
 .card__title {
@@ -248,7 +226,14 @@
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
-    padding-left: 40px;
+    margin-left: 40px;
+    list-style: none;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+    
 }
 
 .about {
@@ -266,13 +251,15 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-left: 70px;
+    margin-top: 36px;
 }
 
 .about__logo-image {
-    width: 136px;
-    height: 102px;
-    top: 3px;
-    left: 7px;
+    width: 178px;
+    height: 115px;
+    top: 1.25px;
+    left: 4.42px;
     border: 6px;
 }
 
@@ -284,6 +271,8 @@
     letter-spacing: 0%;
     text-transform: uppercase;
     margin-bottom: 100px;
+    margin-top: 141px;
+    margin-left: -23.5px;
 }
 
 .about__text {
@@ -293,8 +282,10 @@
     line-height: 24px;
     letter-spacing: 0%;
     display: flex;
-    gap: 16px; 
+    gap: 26px; 
     flex-direction: column;
+    margin-left: -23.5px;
+    margin-right: 26px;
 }
 
 .footer {
@@ -302,7 +293,12 @@
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    padding: 180px 0px 0px 0px;
+    padding: 180px 50px 106px 50px;
+}
+
+.footer__address a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .footer__address {
@@ -314,9 +310,19 @@
     line-height: 1;
     flex-direction: column;
     display: flex;
+    font-style: normal;
+    gap: 7px;
 }
 
-.footer__menu
+
+.footer__menu {
+    margin-top: -40px;
+    margin-left: 54px;
+        display: inline-block;
+    text-decoration: none;
+    justify-content: flex-end;
+    border: 1px;
+}
 
 .footer__menu-list {
     display: flex;
